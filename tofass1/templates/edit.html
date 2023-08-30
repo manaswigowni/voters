@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Voter Information</title>
+</head>
+<body>
+    <h1>Edit Voter Information</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update Voter</button>
+    </form>
+    <a href="\voterslist\">Back to Voters List</a>
+</body>
+</html>

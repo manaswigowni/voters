@@ -1,0 +1,26 @@
+
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Details</title>
+</head>
+<body>
+    <h1>Voter Details</h1>
+    {% if user_details %}
+        <p><strong>Username:</strong> {{ user_details.vid }}</p>
+        <p><strong>Name:</strong> {{ user_details.name }}</p>
+        <p>First Name : {{ user_details.first_name}}</p>
+        <p>Middle Name : {{ user_details.middle_name}}</p>
+        <p>Last Name : {{ user_details.last_name }}</p>
+        <p>District: {{ user_details.distname}}</p>
+        <p>constituency : {{ user_details.ac_name }}</p>
+        <p>Age: {{ user_details.age }}</p>
+        <!-- Add more fields here -->
+    {% else %}
+        <p>User details not found.</p>
+    {% endif %}
+</body>
+</html>
+
+    </body>
+</html>
